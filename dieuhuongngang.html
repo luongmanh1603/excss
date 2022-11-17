@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: bisque;
+        }
+        li {
+            float: left;
+        }
+        li a, .dropbtn {
+            display: inline-block;
+            color:red;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: blue;
+        }
+        li.dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: green;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2 green, blue, alpha);
+            z-index: 1;
+
+        }
+        .dropdown-content a {
+         color: black;
+         padding: 12px 14px;
+         display: block;
+         text-align: left;
+         text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: white
+            
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="dropdown"><a class="dropbtn" href="#manh">Lương Văn Mạnh</a>
+        <div class="dropdown-content">
+            <a href="noio">Quê quán</a>
+            <a href="truong">Trường học</a>
+            <a href="sơthich">Đam mê</a>
+        </div>
+        </li>
+        <li><a href="#quan"> Đặng Văn Quân</a></li>
+        <li><a href="#dai"> Nguyễn Hồng Đại</a></li>
+        <li><a href="#khoi"> Nguyễn Trọng Khôi</a></li>
+    </ul>
+</body>
+</html>
