@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            border: 2px solid red;
+            padding: 12px;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        label {
+            display: inline-block;
+            padding: 12px 12px 12px 0px;
+        }
+        input[type=submit] {
+            background-color: green;
+            color: aqua;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px ;
+            float: right;
+        }
+        input[type=submit]:hover {
+            background-color:black;
+        }
+        .container {
+            border-radius: 4px;
+            background-color: aqua;
+            padding: 20px;
+        }
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="fisrtname" placeholder="Your name...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Your country</label>
+            </div>
+            <div class="col-75">
+                <select id="country" name="country">
+                    <option value="hanoi">Ha Noi</option>
+                    <option value="nghean">Nghe An</option>
+                    <option value="hcm">Ho Chi Minh</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lilich">Li lich</label>
+            </div>
+            <div class="col-75">
+                <textarea id="lilich" name="lilich" placeholder="Viet vao ..." style="height: 120px;"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+</body>
+</html>
